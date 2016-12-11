@@ -19,8 +19,13 @@
         <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
         <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
         <li class="nav-item"><%= link_to "Contact", contact_us_path, class: "nav-link" %></li>
-        <li class="nav-item"><%= link_to "The Resus Bay", theresusbay_path, class: "nav-link" %></li>
-        <li class="nav-item"><%= link_to "Medical Protocol", asset_path("medprotocol.pdf"), class: "nav-link" %></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Resources</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item"><%= link_to "The Resus Bay", theresusbay_path, class: "dropdown-item"%> </a>
+            <a class="dropdown-item"><%= link_to "Medical Protocol", asset_path("medprotocol.pdf"), class: "dropdown-item"%> </a>
+          </div>
+        </li>
         <li class="nav-item float-md-right"><%= link_to "Log Out", signout_path, method: :delete,class: "nav-link" %></li>
         <li class= "nav-item float-sm-right"><%= link_to "Sign up", signup_path, class: "btn btn-primary" %></li>
         <li class= "nav-item float-sm-right"><%= link_to "Sign in", signin_path, class: "nav-link" %></li>

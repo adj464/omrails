@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'contact_us' => 'pages#contact_us'
   get 'theresusbay' => 'pages#podcast'
-  get 'medprotocol' => 'resources#medprotocol'
+  
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
