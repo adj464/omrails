@@ -37,17 +37,17 @@ $brand-inverse:             $gray-dark;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded:            true;
-$enable-shadows:            false;
-$enable-gradients:          false;
-$enable-transitions:        false;
+$enable-shadows:            true;
+$enable-gradients:          true;
+$enable-transitions:        true;
 
 
 // Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these variables.
 
-$spacer:   1rem;
-$border-width: 1px;
+$spacer:   2rem;
+$border-width: 2px;
 
 
 // Body
@@ -71,10 +71,14 @@ $link-hover-decoration: underline;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
+@import url(https://fonts.googleapis.com/css?family=Asap|Roboto);
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif;
-$font-family-base:       $font-family-sans-serif;
+//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+//$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+//$font-family-base:       $font-family-sans-serif;
+//$font-family: 'Roboto', sans-serif;
+$font-family: 'Asap', sans-serif;
+
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 16px;
@@ -132,5 +136,5 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15);
 
 // Jumbotron
 
-$jumbotron-padding:              2rem;
+$jumbotron-padding:              4rem;
 $jumbotron-bg:                   $gray-lighter;
