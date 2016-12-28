@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   end
   
   resources :tweets
+  get 'tweets' => 'tweets#index'
+
   ActiveAdmin.routes(self)
   devise_for :users
   as :user do
@@ -17,7 +19,7 @@ Rails.application.routes.draw do
   get 'contact_us' => 'pages#contact_us'
   get 'theresusbay' => 'pages#podcast'
   get 'stations' => 'pages#stations'
-  
+  get 'staff' => 'pages#staff'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
